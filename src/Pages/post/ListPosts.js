@@ -15,7 +15,7 @@ import {
 } from "react-bootstrap";
 import load from "../../assets/images/loading.gif";
 import OrganismNavBar from "../../Organisms/OrganismsNavbar/OrganismNavbar";
-var page = 0;
+var page = 1;
 const per = 5;
 var isLastPage = false;
 class ListPosts extends React.Component {
@@ -39,7 +39,7 @@ class ListPosts extends React.Component {
     this.loadData();
   };
   componentDidMount() {
-    page = 0;
+    page = 1;
     isLastPage = false;
     this.getListPosts();
     window.addEventListener("scroll", this.handleScroll, true);
